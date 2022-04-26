@@ -12,6 +12,7 @@ translator = Translator()
 text_to_translate = translator.translate(text=user_text, dest='en')
 
 text_to_speech = text_to_translate.text
+st.write(text_to_speech)
 # it converts the translated text to speech.
 tts=gTTS(text=text_to_speech, lang='en')
 
